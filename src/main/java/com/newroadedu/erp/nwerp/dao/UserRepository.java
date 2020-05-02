@@ -8,7 +8,4 @@ import java.sql.Date;
 import java.util.List;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
-    User findByNameLike(String name);
-    List<User> getAllByCreateDate(Date createDate);
-}
+public interface UserRepository extends JpaRepository<User, Long> { }
